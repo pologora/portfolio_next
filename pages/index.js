@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 
 const FIREFLIES_QUANTITY = 15;
 
@@ -21,9 +23,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="text-white absolute top-1/2 left-1/2">
-        <div></div>
-        {fireflyElements}
+      <main className="">
+        <section className="lendingPage">
+          <Header />
+          <Navbar />
+          {fireflyElements}
+        </section>
+        <section>
+          <div className="container bg-bgDark-100 min-h-screen">
+            <p>hi</p>
+          </div>
+        </section>
       </main>
     </div>
   );

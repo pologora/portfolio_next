@@ -1,8 +1,13 @@
 import '../styles/globals.css';
 import '../styles/fireflies.css';
+import {NavbarContextWraper} from '../context/NavbarContext';
 
 function MyApp({Component, pageProps}) {
-  return <Component {...pageProps} />;
+  return (
+    <NavbarContextWraper>
+      <Component {...pageProps} />;
+    </NavbarContextWraper>
+  );
 }
 
 export default MyApp;
