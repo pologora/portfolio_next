@@ -5,7 +5,7 @@ import {NavbarContextWraper} from '../context/NavbarContext';
 function MyApp({Component, pageProps}) {
   return (
     <NavbarContextWraper>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </NavbarContextWraper>
   );
 }

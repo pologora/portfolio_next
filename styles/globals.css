@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  @apply border border-action py-2 px-4 rounded-lg shadow-md shadow-red-700;
+}
+
+.btn:hover {
+  @apply bg-action text-primary;
+}
