@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 .btn {
@@ -12,5 +13,5 @@ html {
 }
 
 .btn:hover {
-  @apply bg-action text-primary;
+  @apply bg-action text-primaryDark;
 }

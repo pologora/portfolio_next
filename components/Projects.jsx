@@ -1,7 +1,6 @@
 import Project from './Project';
 import Section from './Section';
 
-
 import projects from '../public/data/projects';
 
 const Projects = () => {
@@ -11,7 +10,12 @@ const Projects = () => {
 
   return (
     <Section title={'Projects'} id="projects">
-      {projectsElement}
+      <div
+        className="flex gap-10 flex-wrap
+      justify-center"
+      >
+        {projectsElement}
+      </div>
     </Section>
   );
 };

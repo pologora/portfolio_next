@@ -11,14 +11,15 @@ module.exports = {
         main: ['Lato'],
       },
       colors: {
-        primary: '#FFFFFF',
-        secondary: '#FFFFFF',
+        primaryDark: '#FFFFFF',
+        secondaryDark: '#FFFFFF',
+        primaryLight: '#000000',
+        secondaryLight: '#000000',
         action: ' #F30F0F',
-        bgDark: {
-          100: '#0E0C0D ',
-          200: '#000000',
+        bgPrimary: {
+          dark: '#0E0C0D ',
+          light: '#FFFFFF',
         },
-        bgLight: '#ffffff',
       },
       translate: ({theme}) => ({
         ...theme('spacing'),
@@ -26,7 +27,10 @@ module.exports = {
       }),
     },
     backgroundImage: {
-      cpunks_dark: '/img/cpunks_dark.png',
+      // eslint-disable-next-line quotes
+      'lendingDark': "url('/img/forest1.png')",
+      // eslint-disable-next-line quotes
+      'lendingLight': "url('/img/ocean.png')",
     },
   },
   plugins: [],

@@ -1,10 +1,9 @@
 
 .lendingPage {
   height: 100vh;
-  background: url(/img/forest1.jpg);
+  /* background: url(/img/forest1.jpg); */
   background-size: cover;
 }
-/* https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg */
 
 .firefly {
   position: absolute;

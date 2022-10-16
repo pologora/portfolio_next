@@ -12,14 +12,26 @@ const firefliesElementsRenderer = (quantity) => {
   return array;
 };
 
-const LandingPage = () => {
+const LandingPage = ({darkModeToggle, darkMode}) => {
   const fireflyElements = firefliesElementsRenderer(FIREFLIES_QUANTITY);
+
   return (
-    <section className="lendingPage overflow-hidden relative">
-      <Header />
-      <Navbar />
-      <Title />
-      {fireflyElements}
+    <section
+      className={`lendingPage overflow-hidden `}
+      style={{
+        backgroundImage: `${
+          darkMode ?
+            'url(\'/img/forest1.jpg\')' : // eslint-disable-next-line quotes
+              "url('/img/ocean.jpg')"
+        }`,
+      }}
+    >
+      <div className="relative container mx-auto">
+        <Header darkModeToggle={darkModeToggle} darkMode={darkMode} />
+        <Navbar />
+        <Title />
+        {darkMode && fireflyElements}
+      </div>
     </section>
   );
 };

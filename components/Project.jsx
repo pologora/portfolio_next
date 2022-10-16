@@ -26,7 +26,8 @@ const Project = ({project}) => {
   return (
     <article
       className={`relative bg-contain bg-no-repeat h-96 rounded-xl shadow-md
-       shadow-white max-w-lg overflow-hidden `}
+       shadow-white overflow-hidden cursor-pointer sm:w-80 w-[100%]
+        `}
       onClick={toggleShowDescription}
       style={{backgroundImage: `url('${img}')`}}
     >
@@ -34,7 +35,7 @@ const Project = ({project}) => {
         className={`absolute top-0 left-0 right-0 bottom-0
        bg-slate-900 opacity-80 flex flex-col justify-between
         transition-all duration-1000
-       rounded-xl ${showDescription ? 'translate-x-0': 'translate-x-full'}`}
+       rounded-xl ${showDescription ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="absolute top-2 right-2">
           <IoMdClose />
