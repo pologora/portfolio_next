@@ -22,13 +22,15 @@ const LandingPage = ({darkModeToggle, darkMode}) => {
         backgroundImage: `${
           darkMode ?
             'url(\'/img/forest1.jpg\')' : // eslint-disable-next-line quotes
-              "url('/img/ocean.jpg')"
+            "url('/img/ocean.jpg')"
         }`,
       }}
     >
       <div className="relative container mx-auto">
-        <Header darkModeToggle={darkModeToggle} darkMode={darkMode} />
-        <Navbar />
+        <div className='sm:flex sm:justify-between'>
+          <Header darkModeToggle={darkModeToggle} darkMode={darkMode} />
+          <Navbar />
+        </div>
         <Title />
         {darkMode && fireflyElements}
       </div>

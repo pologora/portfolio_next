@@ -1,14 +1,12 @@
 const projects = [
   {
     title: 'Cpunks',
-    img: '/img/cpunks_dark.png',
+    img: '/img/cpunks_dark2.png',
     web: 'https://cpunks.net/',
     tech: ['React', 'Redux', 'Solidity'],
     github: 'https://github.com/pologora/punks',
     description: `Collection of 10,000 unique NFT characters
-     on Cronos Blockchain. 
-    On a website you can mint(buy) them. 
-    Crypto Wallet is needed to interact with an app.`,
+     on Cronos Blockchain.`,
   },
   {
     title: 'Snake game',
@@ -24,10 +22,7 @@ const projects = [
     web: '#',
     tech: ['Next js', 'Tailwind css'],
     github: 'https://github.com/pologora/portfolio_next',
-    description: `Collection of 10,000 unique NFT characters
-     on Cronos Blockchain. 
-    On a website you can mint(buy) them. 
-    Crypto Wallet is needed to interact with an app.`,
+    description: `Builded with Next js and Tailwind css`,
   },
 ];
 

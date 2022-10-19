@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       className="fixed right-10 bottom-10 border
-    border-primary p-2 rounded-full text-primary opacity-50"
+    border-primary p-2 rounded-full text-primary opacity-50 hover:opacity-80"
       onClick={() => scrollToTop()}
     >
       <AiOutlineArrowUp />

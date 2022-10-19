@@ -15,3 +15,6 @@ html {
 .btn:hover {
   @apply bg-action text-primaryDark;
 }
+.container {
+  max-width: 1000px;
+}

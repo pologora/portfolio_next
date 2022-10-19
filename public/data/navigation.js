@@ -11,6 +11,10 @@ const nav = [
     title: 'contact',
     src: '#contact',
   },
+  {
+    title: 'resume',
+    src: '#',
+  },
 ];
 
 export default nav;

@@ -2,7 +2,6 @@ import Head from 'next/head';
 import {useEffect, useState} from 'react';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import Footer from '../components/Footer';
 import LandingPage from '../components/LandingPage';
 import Projects from '../components/Projects';
 import ScrollToTopButton from '../components/ScrollToTopButton';
@@ -37,7 +36,6 @@ export default function Home() {
         <Projects />
         <About />
         <Contact />
-        <Footer />
         <ScrollToTopButton />
       </main>
     </div>

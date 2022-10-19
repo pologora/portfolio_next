@@ -13,14 +13,15 @@ const Header = ({darkModeToggle, darkMode}) => {
     >
       <Logo darkMode={darkMode}/>
       <div className="flex gap-4 items-center">
+        {/* dark mode */}
         <input
-          className="toggle"
+          className="toggle hidden"
           type="checkbox"
           checked={darkMode}
           onChange={darkModeToggle}
         />
         <div
-          className="text-action text-3xl cursor-pointer"
+          className="text-action text-3xl cursor-pointer sm:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           {menuOpen ? <IoMdClose /> : <AiOutlineMenu />}
